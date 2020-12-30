@@ -38,7 +38,7 @@ RUN \
 	nodejs \
 	sudo \
 	yarn && \
-apt-get install -y \
+ apt-get install -y \
 	wget \
 	php-cli \
 	php-common \
