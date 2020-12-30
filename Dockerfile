@@ -38,6 +38,13 @@ RUN \
 	nodejs \
 	sudo \
 	yarn && \
+apt-get install -y \
+	wget \
+	php-cli \
+	php-common \
+	php-mbstring \
+	openjdk-11-jdk && \
+	
  echo "**** install code-server ****" && \
  if [ -z ${CODE_RELEASE+x} ]; then \
 	CODE_RELEASE=$(curl -sX GET "https://api.github.com/repos/cdr/code-server/releases/latest" \
