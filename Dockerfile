@@ -44,7 +44,7 @@ RUN \
 	php-common \
 	php-mbstring \
 	openjdk-11-jdk && \
-	
+curl -s "https://getcomposer.org/installer" | php && mv composer.phar /usr/local/bin/composer && \
  echo "**** install code-server ****" && \
  if [ -z ${CODE_RELEASE+x} ]; then \
 	CODE_RELEASE=$(curl -sX GET "https://api.github.com/repos/cdr/code-server/releases/latest" \
