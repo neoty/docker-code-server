@@ -1,5 +1,5 @@
 FROM ghcr.io/linuxserver/baseimage-ubuntu:bionic
-# 3.11.1 
+# 3.11.2 
 # set version label
 ARG BUILD_DATE
 ARG VERSION
